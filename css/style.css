@@ -14,11 +14,9 @@
             }
             body {
                 color: white;
-                /*background-color: #1e1e1e;*/
                 position: absolute;
-                top: 25%;
+                top: 20%;
                 left: 50%;
-                /*margin-top: -30px;*/
                 margin-left: -100px;
             }
             h1{
