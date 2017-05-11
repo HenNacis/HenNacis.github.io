@@ -1,0 +1,50 @@
+        <style type="text/css">
+            html { 
+                min-height: 100%; 
+                -webkit-background-size: cover; 
+                -moz-background-size: cover; 
+                -o-background-size: cover; 
+                background-size: cover; 
+                background: #1e1e1e; 
+                background-repeat:no-repeat; 
+                /*background: -webkit-radial-gradient(top left, #1e1e1e, black);
+                background: -moz-radial-gradient(top left, #1e1e1e, black);
+                background: -ms-radial-gradient(top left, #1e1e1e, black);
+                background: -o-radial-gradient(top left, #1e1e1e, black);
+                background: radial-gradient(top left, #1e1e1e, black);*/
+            }
+            body {
+                color: white;
+                /*background-color: #1e1e1e;*/
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                /*margin-top: -30px;*/
+                margin-left: -100px;
+            }
+            h1{
+                font-size: 225%;
+                font-family: 'Abel', sans-serif;
+                text-align center ;
+            }
+            p{
+                text-align: center ;
+                font-family: 'Josefin+Sans', sans-serif;
+                font-style: oblique ;
+            }
+            div{
+                margin-top: 200px;
+                margin-bottom: 100px;
+            }
+            h2{
+                font-size: 170%;
+                font-family: 'Abel', sans-serif;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            img{
+                display: block;
+                margin: auto;
+                width: 125px;
+            }
+        </style>
