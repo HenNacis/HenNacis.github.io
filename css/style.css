@@ -22,12 +22,12 @@
             h1{
                 font-size: 225%;
                 font-family: 'Abel', sans-serif;
-                text-align center ;
+                text-align center;
             }
             p{
-                text-align: center ;
+                text-align: center;
                 font-family: 'Josefin+Sans', sans-serif;
-                font-style: oblique ;
+                font-style: oblique;
             }
             div{
                 margin-top: 200px;
@@ -43,4 +43,11 @@
                 display: block;
                 margin: auto;
                 width: 125px;
+            }
+            progress{
+                -webkit-appearance: none;
+                width: 100%;
+            }
+            progress::-webkit-progress-value { 
+                background: red;
             }
