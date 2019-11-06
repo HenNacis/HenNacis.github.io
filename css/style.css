@@ -11,6 +11,8 @@
                 background: -ms-radial-gradient(top left, #1e1e1e, black);
                 background: -o-radial-gradient(top left, #1e1e1e, black);
                 background: radial-gradient(top left, #1e1e1e, black);*/
+                font-family: 'Abel', sans-serif;
+                text-align: center;
             }
             body {
                 color: white;
@@ -21,11 +23,12 @@
             }
             h1{
                 font-size: 225%;
-                font-family: 'Abel', sans-serif;
-                text-align center;
+                margin: 0px;
+            }
+            span{
+                font-size: small;
             }
             p{
-                text-align: center;
                 font-family: 'Josefin+Sans', sans-serif;
                 font-style: oblique;
             }
@@ -35,8 +38,6 @@
             }
             h2{
                 font-size: 170%;
-                font-family: 'Abel', sans-serif;
-                text-align: center;
                 margin-bottom: 10px;
             }
             img{
