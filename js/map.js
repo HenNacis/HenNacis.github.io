@@ -49,12 +49,16 @@ function getUserLocation(gMap){
 
 var modal = document.getElementById('myModal');
 var butttons = document.getElementsByClassName('modalBtn');
+
+
 modal.style.display = "block";
-modal.style.backgroundColor = "#ff000028";
+modal.style.backgroundColor = "#ff000080";
 spotContent.style.display = "none";
 pointsContent.style.display = "none";
 aboutContent.style.display = "none";
 aboutContent2.style.display = "block";
+
+
 for(var i=0; i<butttons.length; i++){
   butttons[i].onclick = function(){
     showModal(this);
@@ -69,16 +73,19 @@ function showModal(event){
   if(id === 'spotModalBtn'){
     pointsContent.style.display = "none";
     aboutContent.style.display = "none";
+    aboutContent2.style.display = "none";//
     spotContent.style.display = "block";
     initMiniMap();
   }else if(id === 'rankModalBtn'){
     spotContent.style.display = "none";
     aboutContent.style.display = "none";
+    aboutContent2.style.display = "none";//
     pointsContent.style.display = "block";
     showUsers();
   }else if(id === 'aboutModalBtn'){
     spotContent.style.display = "none";
     pointsContent.style.display = "none";
+    aboutContent2.style.display = "none";//
     aboutContent.style.display = "block";
   }
 }
