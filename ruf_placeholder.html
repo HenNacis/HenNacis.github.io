@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rainbow Umbrella Finder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" 
+                content="Find fruit stands near you! 
+                        Rainbow Umbrella Finder helps you find a fruit stand near you and satisfy your cravings. 
+                        Now, you won't have to aimlessly look for a fruit stand.">
+        <meta name="author" content="Hen J Nacis">
+        <meta name="Keywords" content="rainbow umbrella, fruit, fruit stand, fruit salad, elotero, elotes, elote stand, corn, ">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98576797-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-98576797-2');
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Rainbow Umbrella Finder!</a></h1>
+        </header>
+        <nav>
+            <ul id="navUl">
+                <li><button id="spotModalBtn" class="modalBtn">I Spotted One!</button></li>
+                <li><button id="rankModalBtn" class="modalBtn">Rankings</button></li>
+                <li><button id="aboutModalBtn" class="modalBtn">About</button></li>
+                <li id="login-li"></li>
+            </ul>
+        </nav>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="spotContent" >
+                    <p>In order to submit spot, You must allow geolocation.</p>
+                    <div id="miniMap"></div>
+                    <P>*Make sure you mark the spot within the radius (RED)*</P>
+                    <form action="addSpot" method="POST">
+                        <input type="text" name="desc" id="descInput" maxlength="200" placeholder="Description...">
+                        <input type="hidden" name="lat" id="locLat">
+                        <input type="hidden" name="lng" id="locLng">
+                        <input type="hidden" name="id" id="id">
+                        <br>
+                        <input type="submit" id="spotBtn">
+                    </form>
+                </div>
+                <div id="pointsContent">
+                    <h2>Top Users</h2>
+                    <table id="usersTable">
+                    </table>
+                </div>
+                <div id="aboutContent">
+                    <h2>About</h2>
+                    <p>Rainbow Umbrella Finder helps you find a fruit stand near you and satisfy your cravings.
+                        Now, you won't have to aimlessly look for a fruit stand.
+                        <br>Also, if you see a nearby fruit stand, report it through the app!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <!-- <iframe
+                width="800"
+                height="500"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCdWXRP5I-hsLgC4k4-VUWjdr6s5mw9Img
+                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe> -->
+        </div>
+        <footer>
+            <p>©2020 Hen J Nacis. All rights reversed.</p>
+        </footer>
+        <!-- <script>
+            var dbMarkers = <%- JSON.stringify(markerResults) %>;
+        </script> -->
+        <script src="/js/map.js"></script>
+        <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdWXRP5I-hsLgC4k4-VUWjdr6s5mw9Img&callback=initMap"></script>
+    </body>
+</html>
