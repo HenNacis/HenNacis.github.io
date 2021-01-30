@@ -67,8 +67,8 @@ for(var i=0; i<butttons.length; i++){
 var navBtns = document.getElementsByClassName('modalBtn');
 
 function showModal(event){
-  modal.style.backgroundColor = "#000028";//---------
-  
+  modal.style.backgroundColor = "#00000030";//---------
+
   modal.style.display = "block";
   var id = event.id;
   console.log("on."+id);
